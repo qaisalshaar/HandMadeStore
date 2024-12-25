@@ -1,0 +1,207 @@
+﻿@using HandMadeStore.Models.Models.ViewModels;
+@model CartVM
+@{
+    ViewData["Title"] = "Shopping Cart Details";
+}
+<style>
+    body {
+        margin-top: 20px;
+        background: #eee;
+    }
+
+    .ui-w-40 {
+        width: 40px !important;
+        height: auto;
+    }
+
+    .card {
+        box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+    }
+
+    .ui-product-color {
+        display: inline-block;
+        overflow: hidden;
+        margin: .144em;
+        width: .875rem;
+        height: .875rem;
+        border-radius: 10rem;
+        -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+        vertical-align: middle;
+    }
+
+</style>
+@if (Model.CartItems.ToList().Count != 0)
+{
+
+
+    <form method="get">
+        <div class="container px-3 my-5 clearfix border border-3 border-dark rounded">
+            <!-- Shopping cart table -->
+            <div class="card border border-3 btn-group text-light">
+                <div class="card-header">
+                    <h2 class="text-primary">Shopping Cart Details</h2>
+                 
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-black table-primary m-0">
+                            <thead>
+                                <tr>
+                                    <!-- Set columns width -->
+                                    <th class="text-center " style="min-width: 300px;" colspan="2">Product Name &amp; Details</th>
+                                    <th class="text-right " style="width: 100px;">Price</th>
+                                    <th class="text-center " style="width: 80px;" colspan="2">Quantity</th>
+                                    <th class="text-right " style="width: 100px;">Total</th>
+                                    <th class="text-right " style="width: 100px;">Action</th>
+
+                                    @* <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="Action" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th> *@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var cart in Model.CartItems)
+                                {
+
+
+                                    <tr>
+                                        <td class="text-center" style="border-right-color:transparent;">
+                                            <div class="media align-items-center">
+                                                @*  <img src="@cart.Product.ImageUrl" class="d-block ui ui-bordered mr-4" alt="" width=""> *@
+                                                <img src="@cart.Product.ImageUrl"
+                                                     style="width:100px;"
+                                                     class="rounded w-10" />
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="media-body">
+                                                <a href="#" class="d-block text-dark">@cart.Product.Name</a>
+
+                                            </div>
+                                        </td>
+                                        <td class="text-right font-weight-semibold align-middle text-center">@cart.PriceFromCount</td>
+                                        <td class="align-middle p-1 text-center" width="75px;">
+
+                                            @*    <input type="number" onchange="myFunctionInputNumber()" min="1" asp-for="@cart.ProductCount" class="control-label p-1 text-center" style="width:50px;" /> *@
+                                            <input type="text" min="1" disabled asp-for="@cart.ProductCount" class="control-label text-center" style="width:50px;" />
+                                            <span asp-validation-for="@cart.ProductCount" class="text-danger"></span>
+                                        </td>
+                                        <td class="align-middle text-center" width="100px;">
+                                            <small class="align-middle text-center">
+
+
+                                                <a asp-action="Increment" asp-route-cartid="@cart.Id" class="btn btn-success border rounded">
+                                                    <i class="bi bi-plus-square"></i>
+                                                </a>
+                                                <hr>
+
+                                                <a asp-action="Decrement" asp-route-cartid="@cart.Id" class="btn btn-warning border rounded">
+                                                    <i class="bi bi-dash-square"></i>
+                                                </a>
+
+                                            </small>
+                                        </td>
+                                        <td class="text-right font-weight-semibold align-middle text-center">$&nbsp;@(cart.PriceFromCount * cart.ProductCount)  </td>
+                                        <td class="text-center align-middle px-0">
+                                            <a asp-action="RemoveFromCart" asp-route-cartid="@cart.Id" class="btn btn-danger border rounded">
+                                                <i class="bi bi-trash-fill "></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <!-- / Shopping cart table -->
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between bg-light border border-primary">
+                                    <h5 class="text-primary">Cart Items (Count)</h5>
+                                    <h5 class="text-primary text-end">@Model.CartItems.Count()</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-4 ">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between bg-light border border-primary">
+                                    <h5 class="text-primary">Pieces(Count)</h5>
+                                    <h5 class="text-primary text-end">@Model.ItemPeicesCount</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-4 ">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between bg-light border border-primary">
+                                    <h5 class="text-primary">TOTAL ($)</h5>
+                                    <h5 class="text-primary text-end">@Model.CartTotal</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                @* <div class="float-right">
+            <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
+            <button type="button" class="btn btn-lg btn-primary mt-2">Checkout</button>
+            </div> *@
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-info w-50 me-1"><i class="bi bi-bag"></i>&nbsp; Continue Shopping</a>
+                        <button asp-action="Summary" type="submit" class="btn btn-primary w-50 me-1"><i class="bi bi-credit-card"></i>&nbsp; Proceed To Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+}
+
+else
+{
+    <form method="get">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header bg-primary text-light">
+                    <div class="row">
+                        <div class="col-6">
+                            <i class=" bi bi-cart"></i>
+                            <strong>shopping cart details</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body text-center">
+                    "there is no data in shopping cart"
+
+                </div>
+                <div class="text-center">
+
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-info p-3 my-3 w-25">
+                        <i class="bi bi-bag"></i> &nbsp;Continue Shopping
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </form>
+}
+
+
+@section Scripts{
+
+    <script>
+        function myFunction() {
+            alert("change");
+        }
+    </script>
+
+    }

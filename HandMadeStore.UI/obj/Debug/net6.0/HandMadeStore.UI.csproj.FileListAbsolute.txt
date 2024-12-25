@@ -1,0 +1,8 @@
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.csproj.AssemblyReference.cache
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.AssemblyInfoInputs.cache
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.AssemblyInfo.cs
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.MvcApplicationPartsAssemblyInfo.cache
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.RazorAssemblyInfo.cache
+D:\HandMadeStore\HandMadeStore.UI\obj\Debug\net6.0\HandMadeStore.UI.RazorAssemblyInfo.cs

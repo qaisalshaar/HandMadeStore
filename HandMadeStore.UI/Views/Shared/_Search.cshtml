@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer locolaizer;
+
+
+<div class="container-fluid text-center w-25 py-3">
+    <form class="d-flex" asp-action="index" data-id="proname" method="get">
+        <input name="proname" class="form-control me-2" type="search" placeholder="@locolaizer["Search"]" id="txtSearch" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">@locolaizer["Search"]</button>
+    </form>
+</div>

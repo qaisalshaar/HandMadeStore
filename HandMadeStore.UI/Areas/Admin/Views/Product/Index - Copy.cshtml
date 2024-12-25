@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Product List";
+}
+
+
+
+<div class="container p-1">
+    <div class="row pt-1">
+        <div class="col-6">
+            <h2 class="text-primary">Product List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp; Create Product
+            </a>
+        </div>
+
+        <table class="table table-bordered table-striped mt-1 w-100">
+            <thead>
+                <tr>
+                    <th>
+                        Product Name
+                    </th>
+                    <th class="text-center">
+                        Product Price
+                    </th>
+                    <th class="text-center">
+                        Product Price10Plus
+                    </th>
+                    <th class="text-center">
+                        Product Price30Plus
+                    </th>
+                    <th class="text-center">
+                        Category
+                    </th>
+                    <th class="text-center">
+                        Brand
+                    </th>
+                    <th class="text-center">
+                        Created Date
+                    </th>
+                    <th class="text-center" width="20%">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.ToList().Count == 0 )
+                {
+                    <tr >
+                        <td colspan="4" class="text-center">
+                           "There Is No data in Table"
+                        </td>
+                       
+
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var product in Model)
+                    {
+                        <tr>
+                            <td>
+                                @product.Name
+                            </td>
+                            <td class="text-center">
+                                @product.Price
+                            </td>
+                            <td class="text-center">
+                                @product.CreatedDate
+                            </td>
+                            <td class="text-center" width="20%">
+                                <div class="d-flex justify-content-between">
+
+                                    <a class="btn btn-warning" asp-action="Update"
+                                       asp-route-id="@product.Id">  <i class="bi bi-pencil-square"></i> &nbsp;  Update</a>
+                                    <a class="btn btn-danger " asp-action="Delete"
+                                       asp-route-id="@product.Id"><i class="bi bi-x-square"></i> &nbsp; Delete</a>
+                                </div>
+
+
+
+
+                            </td>
+
+                        </tr>
+                    }
+                }
+              
+            </tbody>
+        </table>
+    </div>
+</div>

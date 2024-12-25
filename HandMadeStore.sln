@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeStore.UI", "HandMadeStore.UI\HandMadeStore.UI.csproj", "{ED68D8ED-B45D-4437-B068-D9E5859CEB92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeStore.DataAccess", "HandMadeStore.DataAccess\HandMadeStore.DataAccess.csproj", "{4962449E-7A8D-4999-BA8D-E6FF306AD922}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeStore.Models", "HandMadeStore.Models\HandMadeStore.Models.csproj", "{B747C852-5664-43B0-8EF5-D6367152AACE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeStore.Utilities", "HandMadeStore.Utilities\HandMadeStore.Utilities.csproj", "{02FE646D-E16A-4F6D-97FC-B9055327C258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaisalshaarhandmadestore.Report", "Kaisalshaarhandmadestore.Report\Kaisalshaarhandmadestore.Report.csproj", "{F5F5AFFA-B91D-4258-B697-1E2DBCA7320E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsModels", "ReportsModels\ReportsModels.csproj", "{E67D3245-12F7-4202-BB54-3238D530BCA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED68D8ED-B45D-4437-B068-D9E5859CEB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED68D8ED-B45D-4437-B068-D9E5859CEB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED68D8ED-B45D-4437-B068-D9E5859CEB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED68D8ED-B45D-4437-B068-D9E5859CEB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4962449E-7A8D-4999-BA8D-E6FF306AD922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4962449E-7A8D-4999-BA8D-E6FF306AD922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4962449E-7A8D-4999-BA8D-E6FF306AD922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4962449E-7A8D-4999-BA8D-E6FF306AD922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B747C852-5664-43B0-8EF5-D6367152AACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B747C852-5664-43B0-8EF5-D6367152AACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B747C852-5664-43B0-8EF5-D6367152AACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B747C852-5664-43B0-8EF5-D6367152AACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02FE646D-E16A-4F6D-97FC-B9055327C258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FE646D-E16A-4F6D-97FC-B9055327C258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FE646D-E16A-4F6D-97FC-B9055327C258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FE646D-E16A-4F6D-97FC-B9055327C258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F5AFFA-B91D-4258-B697-1E2DBCA7320E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F5AFFA-B91D-4258-B697-1E2DBCA7320E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F5AFFA-B91D-4258-B697-1E2DBCA7320E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F5AFFA-B91D-4258-B697-1E2DBCA7320E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67D3245-12F7-4202-BB54-3238D530BCA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67D3245-12F7-4202-BB54-3238D530BCA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67D3245-12F7-4202-BB54-3238D530BCA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67D3245-12F7-4202-BB54-3238D530BCA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DEA10F4-638D-4FD7-BA78-DFE4E2745136}
+	EndGlobalSection
+EndGlobal

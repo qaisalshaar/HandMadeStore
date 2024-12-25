@@ -1,0 +1,175 @@
+{
+  //_Layout.chtml
+  "welcome": "welcome,{0} {1} How are you  kais",
+  "&copy; Kais Alshaar Handmade Store - 2022": "&copy; Kais Alshaar Handmade Store - 2022",
+  "About": "About",
+  "Admin Panel": "Admin Panel",
+  "Brands": "Brands",
+  "Categories": "Categories",
+  "Contact": "Contact",
+  "Create User": "Create User",
+  "Home": "Home",
+  "Manage Orders": "Manage Orders",
+  "Products": "Products",
+  "Shops": "Shops",
+
+  //_LoginPartial.cshtml
+
+  "Hello": "Hello",
+  "Logout": "Logout",
+  "Register": "Register",
+  "Login": "Login",
+
+  //"About.cshtml"
+  "About Us": "About Us",
+  "Kais Alshaar handmade Store is a leading platform...": "Kais Alshaar handmade Store is a leading platform...",
+  "Kais Alshaar handmade Store  is a leading platform that provides computer science resources and coding challenges for programmers and technology enthusiasts,along with interview and exam preparations for upcoming aspirants.With a strong emphasis on enhancing coding skills and knowledge,it has become a trusted destination for over 12 million plus registered users worldwide.": "Kais Alshaar handmade Store  is a leading platform that provides computer science resources and coding challenges for programmers and technology enthusiasts,along with interview and exam preparations for upcoming aspirants.With a strong emphasis on enhancing coding skills and knowledge,it has become a trusted destination for over 12 million plus registered users worldwide.",
+  "Read More...": "Read More...",
+  "Meet Our Team": "Meet Our Team",
+  "Kais Alshaar": "Kais Alshaar",
+  "CEO and Founder": "CEO and Founder",
+  "Sales": "Sales",
+  "Markiting": "Markiting",
+
+
+  //"Contact.cshtml"
+
+  "Submit": "Submit",
+  "Write Message": "Write Message",
+  "Email Address": "Email Address",
+  "Full Name": "Full Name",
+  "Kais Alshaar HandMade Store": "Kais Alshaar HandMade Store",
+
+  //"_Search.cshtml"
+
+  "Search": "Search",
+
+
+  //"Register.cshtml"
+  "Create User - Admin Panel": "Create User - Admin Panel",
+  "Create a new account": "Create a new account",
+  "Phone Number": "Phone Number",
+  "account": "account",
+  "City": "City",
+  "Confirm Password": "Confirm Password",
+  "Facebook": "Facebook",
+  "Google": "Google",
+  "Log in using your": "Log in using your",
+  "Name": "Name",
+  "Password": "Password",
+  "Postal Code": "Postal Code",
+  "Select Role": "Select Role",
+  "Select Shop": "Select Shop",
+  "Street Address": "Street Address",
+  "Or Use another services to register": "Or Use another services to register",
+  "Required": "Required",
+  "CompareError": "The password and confirmation do not match.",
+  "EmailError": "Enter Valid Email",
+  "PasswordLength": "The {0} must be at least {2} and at max {1} characters long.",
+
+  //"Login.cshtml"
+  "Log in": "Log in",
+  "Use a local account to log in": "Use a local account to log in",
+  "RememberMe": "RememberMe",
+  "Forgot your password": "Forgot your password",
+  "Register as a new user": "Register as a new user",
+  "Resend email confirmation": "Resend email confirmation",
+  "Or Use another services to Login": "Or Use another services to Login",
+  "Email": "Email",
+
+
+  //"Category" "Index.cshtml" Update Delete
+
+  "Category List": "Category List",
+  "Create Category": "Create Category",
+  "Category Name": "Category Name",
+  "Created Date": "Created Date",
+  "Action": "Action",
+  "Update": "Update",
+  "Delete": "Delete",
+  "There Is No Data": "There Is No Data",
+  "Update Category": "Update Category",
+  "Back to List": "Back to List",
+  "Delete Category": "Delete Category",
+  "Print Categories": "Print Categories",
+  "Category Arabic Name": "Category Arabic Name",
+  "ArabicName": "ArabicName",
+  "Please Enter category name": "Please Enter category name",
+  "Please Enter category Arabic name": "Please Enter category Arabic name",
+  //Brand Index Update Delete
+  "Brand List": "Brand List",
+  "Create Brand": "Create Brand",
+  "Brand Name": "Brand Name",
+  "Spider Pixie Crafts": "Spider Pixie Crafts",
+  "Rainbow Snow Designs": "Rainbow Snow Designs",
+  "MIB Merch": "MIB Merch",
+  "Sweet Pea Creations": "Sweet Pea Creations",
+  "Germany": "Germany",
+  "Delete Brand": "Delete Brand",
+
+  //Home Index Details
+  "Details": "Details",
+  "Home Catalog": "Home Catalog",
+  "Price": "Price",
+  "Quantity": "Quantity",
+  "Add to Cart": "Add to Cart",
+  "ProductCount": "ProductCount",
+  "By": "By",
+  "Add Review Here": "Add Review Here",
+  "Add Review": "Add Review",
+  "Description": "Description",
+  "Porsche 928 Greeting Card": "Porsche 928 Greeting Card",
+  "A6 Greeting Card print , original artwork. Blank inside. Comes with orange envelope and cellophane packaging to fit.": "A6 Greeting Card print , original artwork. Blank inside. Comes with orange envelope and cellophane packaging to fit.",
+  "wiccan bracelet": "wiccan bracelet",
+  "Welcome to the World new baby frame": "Welcome to the World new baby frame",
+  "Steam Train Greeting Card": "Steam Train Greeting Card",
+  "Paint Art1": "Paint Art1",
+  "Multi coloured fox coaster": "Multi coloured fox coaster",
+  "MIB Socks": "MIB Socks",
+  "MIB Beanie": "MIB Beanie",
+  "Forest fairy wing earrings": "Forest fairy wing earrings",
+
+  //Shop Index Upsert Delete
+
+  "Shop List": "Shop List",
+  "Create Shop": "Create Shop",
+  "Shop Name": "Shop Name",
+  "Update Shop": "Update Shop",
+  "date": "Date",
+  "currency": "Currency",
+  "numbers": "Numbers",
+  "Culture": "Language",
+  "UICulture": "Language",
+
+
+  //Product Index Upsert Delete
+  "Product List": "Product List",
+  "Create Product": "Create Product",
+  "Product Name": "Product Name",
+  "Image": "Image",
+  "Update Product": "Update Product",
+  "Product Price": "Product Price",
+  "Product Price10plus": "Product Price10plus",
+  "Product Price30plus": "Product Price30plus",
+  "Select Category": "Select Category",
+  "Select Brand": "Select Brand",
+  "Product Arabic Name": "Product Arabic Name",
+  "Please Enter product arabic name": "Please Enter product arabic name",
+  "Arabic Description": "Arabic Description",
+  "Please Enter Arabic Description": "Please Enter Arabic Description",
+  "Please Enter product name": "Please Enter product name",
+  "Please Enter product price": "Please Enter product price",
+  "Please Enter product Price10plus": "Please Enter product Price10plus",
+  "Please Enter product Price30plus": "Please Enter product Price30plus",
+  "Please upload an image": "Please upload an image",
+
+  "Please Enter Description": "Please Enter Description",
+  "Please Enter Brand Name": "Please Enter Brand Name",
+  "Product Description": "Product Description",
+  "Arabic Product Description": "Arabic Product Description"
+
+
+
+
+
+}

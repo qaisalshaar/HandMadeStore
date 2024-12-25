@@ -1,0 +1,5 @@
+D:\HandMadeStore\HandMadeStore.DataAccess\obj\Debug\net6.0\HandMadeStore.DataAccess.csproj.AssemblyReference.cache
+D:\HandMadeStore\HandMadeStore.DataAccess\obj\Debug\net6.0\HandMadeStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\HandMadeStore.DataAccess\obj\Debug\net6.0\HandMadeStore.DataAccess.AssemblyInfoInputs.cache
+D:\HandMadeStore\HandMadeStore.DataAccess\obj\Debug\net6.0\HandMadeStore.DataAccess.AssemblyInfo.cs
+D:\HandMadeStore\HandMadeStore.DataAccess\obj\Debug\net6.0\HandMadeStore.DataAccess.csproj.CoreCompileInputs.cache

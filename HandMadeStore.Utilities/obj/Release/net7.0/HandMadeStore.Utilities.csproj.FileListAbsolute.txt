@@ -1,0 +1,14 @@
+D:\HandMadeStore\HandMadeStore.Utilities\bin\Release\net7.0\HandMadeStore.Utilities.deps.json
+D:\HandMadeStore\HandMadeStore.Utilities\bin\Release\net7.0\HandMadeStore.Utilities.runtimeconfig.json
+D:\HandMadeStore\HandMadeStore.Utilities\bin\Release\net7.0\HandMadeStore.Utilities.dll
+D:\HandMadeStore\HandMadeStore.Utilities\bin\Release\net7.0\HandMadeStore.Utilities.pdb
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.csproj.AssemblyReference.cache
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.AssemblyInfoInputs.cache
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.AssemblyInfo.cs
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.dll
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\refint\HandMadeStore.Utilities.dll
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.pdb
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\HandMadeStore.Utilities.genruntimeconfig.cache
+D:\HandMadeStore\HandMadeStore.Utilities\obj\Release\net7.0\ref\HandMadeStore.Utilities.dll

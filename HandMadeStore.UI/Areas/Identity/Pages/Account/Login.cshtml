@@ -1,0 +1,135 @@
+﻿@page
+@model LoginModel
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+
+@{
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+@{
+
+    var IsArabic = CultureInfo.CurrentCulture.Name.StartsWith("ar");
+
+}
+
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary ml-0 py-1">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="py-2 text-white">@locolaizer["Log in"]</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <form id="account" method="post">
+                        <h3 class="border-bottom pb-3 mb-4 text-secondary text-center">
+                            @locolaizer["Use a local account to log in"].</h3>
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email" class="form-label">@locolaizer["Email"]</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password" class="form-label">@locolaizer["Password"]</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label asp-for="Input.RememberMe" class="form-label">
+                                <input class="form-check-input" asp-for="Input.RememberMe" style="background-color: #593196" />
+                               @*  @Html.DisplayNameFor(m => m.Input.RememberMe) *@
+                                &ensp;   @locolaizer["RememberMe"]
+                            </label>
+                        </div>
+                        <div>
+                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">@locolaizer["Log in"]</button>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2">
+                            <p>
+                                <a id="forgot-password" asp-page="./ForgotPassword">@locolaizer["Forgot your password"]?</a>
+                            </p>
+                            <p>
+                                 @if (IsArabic)
+                                {
+                                    <a style="margin-right:112px" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">@locolaizer["Register as a new user"] </a>
+                                }
+
+                                @if (!IsArabic)
+                                {
+                                    <a  asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">@locolaizer["Register as a new user"] </a>
+                                }
+                               
+                                  
+                                    </p>
+                            <p>
+                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">@locolaizer["Resend email confirmation"]</a>
+                            </p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-12 p-3 text-center">
+                <section>
+                    <p class="divider-text d-flex pt-3">@locolaizer["Or Use another services to Login"].</p>
+
+                    @{
+                        if ((Model.ExternalLogins?.Count ?? 0) == 0) {
+                            <div>
+                                <p>
+                                    There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+                                        article
+                                        about setting up this ASP.NET application to support logging in via external services
+                                    </a>.
+                                </p>
+                            </div>
+                        }
+                        else {
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div>
+                                    <p>
+                                        @foreach (var provider in Model.ExternalLogins!) {
+                                            if (provider.Name == "Facebook")
+                                            {
+                                                <button type="submit" class="btn btn-primary col-12 btn-lg mb-2 p-2" name="provider" value="@provider.Name" title="@locolaizer["log in using your"] @locolaizer[provider.DisplayName] @locolaizer["account"]">
+
+                                                    <i class="bi bi-facebook"></i>
+
+                                                    @locolaizer[provider.DisplayName]
+                                                </button>
+                                            }
+
+
+                                            if (provider.Name == "Google")
+                                            {
+                                                <button type="submit" class="btn btn-danger col-12 btn-lg mb-2 p-2" name="provider" value="@provider.Name" title="@locolaizer["log in using your"] @locolaizer[provider.DisplayName] @locolaizer["account"]">
+
+                                                    <i class="bi bi-google"></i>
+
+                                                    @locolaizer[provider.DisplayName]
+                                                </button>
+                                            }
+                                        }
+                                    </p>
+                                </div>
+                            </form>
+                        }
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

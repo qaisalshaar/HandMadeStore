@@ -1,0 +1,126 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Product List";
+}
+
+
+
+<div class="container-fluid p-1">
+    <div class="row pt-1">
+        <div class="col-6">
+            <h2 class="text-primary">Product List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp; Create Product
+            </a>
+        </div>
+
+        <table id="productTable" class="table table-bordered table-striped mt-1 w-100">
+            <thead>
+                <tr>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                       Description
+                    </th>
+                    <th class="text-center">
+                        Product Price
+                    </th>
+                    <th class="text-center">
+                        Product Price10Plus
+                    </th>
+                    <th class="text-center">
+                        Product Price30Plus
+                    </th>
+                    <th class="text-center">
+                        Category
+                    </th>
+                    <th class="text-center">
+                        Brand
+                    </th>
+                    <th class="text-center">
+                         Product Image URL
+                    </th>
+                    <th class="text-center">
+                        Created Date
+                    </th>
+                    <th class="text-center" width="20%">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pro in Model)
+                {
+                    <tr class="text-center">
+                        <td>@pro.Name</td>
+                        <td>@pro.Description</td>
+                        <td>@pro.Price</td>
+                        <td>@pro.Price10plus</td>
+                        <td>@pro.Price30plus </td>
+                        <td>@pro.CategoryId</td>
+                        <td>@pro.BrandId</td>
+                        <td>@pro.ImageUrl</td>
+                        <td>@pro.CreatedDate</td>
+                      
+                            <td></td>                      
+                       
+                        
+                    
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+@*  working with datatable *@
+                  @*   @section Script{
+
+                       @*  load datatable *@
+                         
+
+                     @*   <script src="~/js/product.js"></script> *@
+
+                  @*   } *@
+  @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+  
+
+
+  @section Scripts{
+
+    <script src="~/js/product.js"></script>
+  
+  }
+
+
+
+
+
+
+
+@* 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#productTable').Datatable({
+            alert('ok');
+
+        });
+
+        /*  loaddate();*/
+
+    });
+
+</script>
+ *@
+             

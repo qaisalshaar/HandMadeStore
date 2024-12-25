@@ -1,0 +1,187 @@
+{
+  //_Layout.chtml
+  "welcome": "welcome,{0} {1} How are you  kais",
+  "&copy; Kais Alshaar Handmade Store - 2022": "حقوق الموقع محفوظة - متجر قيس الشعار للصناعات اليدوية - 2022",
+  "About": "من نحن",
+  "Admin Panel": "لوحة الإدارة",
+  "Brands": "العلامات التجارية",
+  "Categories": "الاصناف",
+  "Contact": "إتصل بنا",
+  "Create User": "إنشاء مستخدم جديد",
+  "Home": "الرئيسية",
+  "Manage Orders": "إدارة طلبات الشراء",
+  "Products": "المنتجات",
+  "Shops": "المحلات",
+
+  //_LoginPartial.cshtml
+
+  "Hello": "مرحبا",
+  "Logout": "تسجيل خروج",
+  "Register": "تسجيل جديد",
+  "Login": "تسجيل الدخول",
+
+
+  //"About.cshtml"
+  "About Us": "من نحن",
+  "Kais Alshaar handmade Store is a leading platform...": "متجر قيس الشعار للصناعات اليدوية هو منصة رائدة...",
+  "متجر قيس الشعار للصناعات اليدوية هو منصة رائدة توفر موارد علوم الكمبيوتر وتحديات البرمجة للمبرمجين وعشاق التكنولوجيا، إلى جانب الاستعدادات للمقابلات والاختبارات للطامحين القادمين. مع التركيز القوي على تعزيز مهارات البرمجة والمعرفة، أصبح وجهة موثوقة أكثر من 12 مليون مستخدم مسجل في جميع أنحاء العالم.": "متجر قيس الشعار للصناعات اليدوية هو منصة رائدة توفر موارد علوم الكمبيوتر وتحديات البرمجة للمبرمجين وعشاق التكنولوجيا، إلى جانب الاستعدادات للمقابلات والاختبارات للطامحين القادمين. مع التركيز القوي على تعزيز البرمجة المهارات والمعرفة، أصبحت وجهة موثوقة لأكثر من 12 مليون مستخدم مسجل في جميع أنحاء العالم.",
+  "Read More...": "اقرأ أكثر...",
+  "Meet Our Team": "التق بفريقنا",
+  "Kais Alshaar": "قيس الشعار",
+  "CEO and Founder": "الرئيس التنفيذي والمؤسس",
+  "Sales": "مدير المبيعات",
+  "Markiting": "مدير التسويق",
+
+
+
+  //"Contact.cshtml"
+
+  "Submit": "أرسل",
+  "Write Message": "أكتب رسالة",
+  "Email Address": "البريد الألكتروني",
+  "Full Name": "الاسم الكامل",
+  "Kais Alshaar HandMade Store": "متجر قيس الشعار للصناعات اليدوية",
+
+
+  //"_Search.cshtml"
+
+  "Search": "أبحث",
+
+
+
+  //"Register.cshtml"
+  "Create User - Admin Panel": "إنشاء مستخدم - لوحة الإدارة",
+  "Create a new account": "انشاء حساب جديد",
+  "Phone Number": "رقم التلفون",
+  "account": "الحساب",
+  "City": "المدينة",
+  "Confirm Password": "تاكيد كلمةالسر",
+  "Facebook": "فيسبوك",
+  "Google": "قوقل",
+  "Log in using your": "تسجيل الدخول باستخدام الحساب الخاص بك",
+  "Name": "الاسم",
+  "Password": "الرقم السري",
+  "Postal Code": "الرمز البريدي",
+  "Select Role": "إختر دور المستخدم",
+  "Select Shop": "إختر المحل",
+  "Street Address": "العنوان",
+  "Or Use another services to register": "أو إستخدم طريقة أخرى للتسجيل",
+  "Required": "{0} مطلوب",
+  "CompareError": "كلمة المرور وتأكيدها غير متطابقتين",
+  "EmailError": "يجب إدخال البريد الإلكتروني بشكل صحيح",
+  "PasswordLength": "كلمة المرور يجب أن لا تقل عن {2} ولا تزيد عن {1} حرف",
+
+
+  //"Login.cshtml"
+  "Log in": "تسجيل الدخول",
+  "Use a local account to log in": "استخدم حسابًا محليًا لتسجيل الدخول",
+  "RememberMe": "تذكرني",
+  "Forgot your password": "نسيت كلمة السر",
+  "Register as a new user": "سجل كمستخدم جديد",
+  "Resend email confirmation": "إعادة إرسال تأكيد البريد الإلكتروني",
+  "Or Use another services to Login": "أو استخدم خدمات أخرى لتسجيل الدخول",
+  "Email": "البريد الالكتروني",
+
+
+  //"Category" "Index.cshtml"
+
+  "Category List": "قائمة الأصناف",
+  "Create Category": "أنشاء صنف جديد",
+  "Category Name": "أسم الصنف",
+  "Created Date": "تاريخ الادخال",
+  "Action": "الحدث",
+  "Update": "تحديث",
+  "Delete": "حذف",
+  "There Is No Data": "لا توجد بيانات",
+  "Update Category": "تعديل اسم الصنف",
+  "Back to List": "الرجوع الى القائمة",
+  "Delete Category": "حذف الصنف",
+  "Print Categories": "طباعة الاصناف",
+  "Category Arabic Name": "أسم الصنف بالعربي",
+
+
+  "Please Enter category name": "يرجى ادخال اسم الصنف ",
+
+  "Please Enter category Arabic name": "يرجى ادخال اسم الصنف بالعربي",
+  //"ArabicName": "الاسم بالعربي",
+
+
+  //Brand Index Update Delete
+
+  "Brand List": "قائمة العلامات التجارية",
+  "Create Brand": "إنشاء العلامات التجارية",
+  "Brand Name": "أسم العلامات التجارية",
+  "Spider Pixie Crafts": "الحرف العنكبوت بيكسي",
+  "Rainbow Snow Designs": "تصاميم قوس قزح الثلج",
+  "MIB Merch": "سلع MIB",
+  "Sweet Pea Creations": "إبداعات البازلاء الحلوة",
+  "Germany": "المانيا",
+  "Delete Brand": "حذف العلامات التجارية",
+
+  //Home Index Details
+  "Details": "تفاصيل المنتج",
+  "Home Catalog": "صفحة المنتجات",
+  "Price": "السعر",
+  "Quantity": "الكمية",
+  "Add to Cart": "أضف الى السلة",
+  "ProductCount": "عدد القطع",
+  "By": "من",
+  "Add Review Here": "أضف تعليق هنا",
+  "Add Review": "أضف تعليق",
+  "Description": "وصف",
+  "Porsche 928 Greeting Card": "بورش 928 بطاقة معايدة",
+  "A6 Greeting Card print , original artwork. Blank inside. Comes with orange envelope and cellophane packaging to fit.": "طباعة بطاقات تهنئة مقاس A6، عمل فني أصلي. فارغة في الداخل. يأتي مع ظرف برتقالي وعبوة من السيلوفان لتناسبه.",
+  "wiccan bracelet": "سوار الويكا",
+  "Welcome to the World new baby frame": "مرحبا بكم في إطار الطفل الجديد في العالم",
+  "Steam Train Greeting Card": "بطاقة تهنئة لقطار البخار",
+  "Paint Art1": "فن الرسم 1",
+  "Multi coloured fox coaster": "قاعدة ثعلب متعددة الألوان",
+  "MIB Socks": "جوارب MIB",
+  "MIB Beanie": "MIB قبعة صغيرة",
+  "Forest fairy wing earrings": "أقراط جناح جنية الغابة",
+
+
+
+  //Shop Index Update Delete
+
+  "Shop List": "قائمة المحلات",
+  "Create Shop": "أنشاء محل",
+  "Shop Name": "أسم المحل",
+  "Update Shop": "تعديل محل",
+  "date": "اليوم",
+  "currency": "العملة",
+  "numbers": "الارقام",
+  "Culture": "اللغة",
+  "UICulture": "واجهة اللغة",
+
+
+
+  //Product Index Upsert Delete
+  "Product List": "قائمة المنتجات",
+  "Create Product": "إنشاء منتج جديد",
+  "Product Name": "أسم المنتج",
+  "Image": "الصورة",
+  "Update Product": "تحديث المنتج",
+  "Product Price": "سعر المنتج",
+  "Product Price10plus": "سعر المنتج لاكثر من 10",
+  "Product Price30plus": "سعر المنتج لاكثر من 30",
+  "Select Category": "إختار الصنف",
+  "Select Brand": "إختار أسم العلامات التجارية",
+  "Product Arabic Name": "أسم المنتج بالعربي",
+  "Please Enter product arabic name": "يرجى إدخال أسم الصنف بالعربي",
+  "Arabic Description": "تفاصيل المنتج بالعربي",
+  "Please Enter Arabic Description": "يرجى إدخال تفاصيل المنتج بالعربي",
+  "Please Enter product name": "يرجى إدخال اسم المنتج",
+
+  "Please Enter product price": "يرجى إدخال سعر المنتج",
+  "Please Enter product Price10plus": "يرجى إدخال سعر المنتج لاكثر من 10",
+  "Please Enter product Price30plus": "يرجى إدخال سعر المنتج لاكثر من 30",
+  "Please upload an image": "يرجى تحميل صورة",
+
+  "Please Enter Description": "يرجى إدخال تفاصيل المنتج",
+  "Please Enter Brand Name": "يرجى إدخال أسم العلامات التجارية",
+
+  "Product Description": "تفاصيل المنتج",
+  "Arabic Product Description": "تفاصيل المنتج بالعربي"
+
+}

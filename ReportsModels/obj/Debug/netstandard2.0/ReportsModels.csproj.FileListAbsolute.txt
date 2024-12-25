@@ -1,0 +1,20 @@
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.deps.json
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.csproj.AssemblyReference.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.AssemblyInfoInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.AssemblyInfo.cs
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.csproj.CoreCompileInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.pdb
+D:\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.deps.json
+D:\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.dll
+D:\HandMadeStore\ReportsModels\bin\Debug\netstandard2.0\ReportsModels.pdb
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.csproj.AssemblyReference.cache
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.AssemblyInfoInputs.cache
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.AssemblyInfo.cs
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.dll
+D:\HandMadeStore\ReportsModels\obj\Debug\netstandard2.0\ReportsModels.pdb

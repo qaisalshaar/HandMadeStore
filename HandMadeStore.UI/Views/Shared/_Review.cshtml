@@ -1,0 +1,112 @@
+﻿@model ReviewCustomer
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+@{
+    // to run client side validation
+    Layout = "~/Views/Shared/_Layout_Review.cshtml";
+
+
+
+}
+
+
+
+
+<div class="card">
+    <form method="post">
+       @*  <input asp-for="ProductId" hidden /> *@
+        <div class="text-center my-2">
+            <textarea id="rvwtxt" asp-for="ReviewText" class="w-75" placeholder="@locolaizer["Add Review Here"]"></textarea>
+            <div class="text-center">
+                <span id="errrvwxt" asp-validation-for="ReviewText" class="text-danger text-center  mb-2"></span>
+            </div>
+            <button id="rvwtxt1" onclick="validateInput();" asp-action="AddReview" type="submit" class="btn btn-info w-50 mt-3">@locolaizer["Add Review"]</button>
+        </div>
+
+      @*   <div class="col-12">
+            <div class="text-center my-2">
+
+                <textarea id="rvwtxt" asp-for="ReviewText" class="w-75 mb-2" placeholder="Add Review Here"></textarea>
+               <div class="text-center">
+                    <span id="errrvwxt" asp-validation-for="ReviewText" class="text-danger text-center"></span>
+               </div>
+                <button id="rvwtxt1" onclick="validateInput();" asp-action="AddReview" type="submit" class="btn btn-info w-50">Add Review</button>
+            </div>
+        </div> *@
+
+      
+
+    </form>
+    <partial name="_Reviews" />
+</div>
+
+@section Scripts{
+
+    <script>
+
+        $(document).on('click', '#rvwtxt1', function () {
+         //   alert('ok');
+            if ($("#rvwtxt").val() == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please Add Review Text!'
+                });
+
+
+
+                $("#errrvwxt").html("Please Add Review Text!");
+                // $("#imagpath").focus();
+                // $('#submit-btn').attr("disabled", true);
+                return false;
+
+
+
+
+            } else {
+                // $('#submit-btn').removeAttr("disabled");
+                $("#errrvwxt").html('');
+                return true;
+            }
+
+        });
+
+
+                // const validateInput = () => {
+
+                //     alert('ok');
+                //     if ($("#rvwtxt").val() == "") {
+                //         Swal.fire({
+                //             icon: 'error',
+                //             title: 'Oops...',
+                //             text: 'Please Add Review Text!'
+                //         });
+
+
+
+                //         $("#errrvwxt").html("Please Add Review Text!");
+                //         // $("#imagpath").focus();
+                //         // $('#submit-btn').attr("disabled", true);
+                //         return false;
+
+
+
+
+                //     } else {
+                //         // $('#submit-btn').removeAttr("disabled");
+                //         $("#errrvwxt").html('');
+                //         return true;
+                //     }
+
+                // }
+
+
+
+
+    </script>
+
+
+
+
+        }

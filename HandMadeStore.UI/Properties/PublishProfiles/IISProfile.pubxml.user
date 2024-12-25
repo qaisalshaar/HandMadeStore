@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>
+    </EncryptedPassword>
+    <History>True|2024-03-21T23:43:09.0127862Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConKey">
+      <Value>Data Source=SQL5106.site4now.net%3bInitial Catalog=db_aa6c13_storedb2024%3bUser Id=db_aa6c13_storedb2024_admin%3bPassword=Passw0rd1!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="HandMadeStore.DataAccess.Data.ApplicationDbContext">
+      <Value>Data Source=SQL5106.site4now.net%3bInitial Catalog=db_aa6c13_storedb2024%3bUser Id=db_aa6c13_storedb2024_admin%3bPassword=Passw0rd1!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

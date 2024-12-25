@@ -1,0 +1,22 @@
+﻿@* // Override global options
+toastr.success('We do have the Kapua suite available.', 'Turtle Bay Resort', {timeOut: 5000}) *@
+
+@{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="~/js/sweetalert2.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        document.getElementById('imgurlupload').addEventListener("click", function () {
+            alert('oooo');
+
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            );
+        });
+    </script>
+
+}

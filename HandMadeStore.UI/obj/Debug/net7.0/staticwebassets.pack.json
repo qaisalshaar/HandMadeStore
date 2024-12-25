@@ -1,0 +1,793 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HandMadeStore.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HandMadeStore.UI.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Rotativa\\help-wkhtmltoimage.txt",
+      "PackagePath": "staticwebassets\\Rotativa\\help-wkhtmltoimage.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Rotativa\\help-wkhtmltopdf.txt",
+      "PackagePath": "staticwebassets\\Rotativa\\help-wkhtmltopdf.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Rotativa\\wkhtmltoimage.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltoimage.exe"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\Confirm_Account_Registration - Copy.html",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\Confirm_Account_Registration - Copy.html"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\Confirm_Account_Registration.html",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\Confirm_Account_Registration.html"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\Order-Confirmation-Email-Template - Copy.html",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\Order-Confirmation-Email-Template - Copy.html"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\Order-Confirmation-Email-Template.html",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\Order-Confirmation-Email-Template.html"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\confirmaccount.html",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\confirmaccount.html"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\Templates\\EmailTemplates\\images\\handmadestore.png",
+      "PackagePath": "staticwebassets\\Templates\\EmailTemplates\\images\\handmadestore.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\css\\rtl.css",
+      "PackagePath": "staticwebassets\\css\\rtl.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\css\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\css\\sweetalert2.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\AccessDenied.png",
+      "PackagePath": "staticwebassets\\images\\AccessDenied.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\Kais_Pic_New - .jpeg",
+      "PackagePath": "staticwebassets\\images\\Kais_Pic_New - .jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\Kaisalshaar.jpg",
+      "PackagePath": "staticwebassets\\images\\Kaisalshaar.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\NoDataFound.jpg",
+      "PackagePath": "staticwebassets\\images\\NoDataFound.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\NodDataFound.PNG",
+      "PackagePath": "staticwebassets\\images\\NodDataFound.PNG"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\confirmation.png",
+      "PackagePath": "staticwebassets\\images\\confirmation.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\handmadestore.png",
+      "PackagePath": "staticwebassets\\images\\handmadestore.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\handmadestore1.png",
+      "PackagePath": "staticwebassets\\images\\handmadestore1.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\1.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\17.1 CSS_JS.txt",
+      "PackagePath": "staticwebassets\\images\\originalimage\\17.1 CSS_JS.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\2.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\3.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\4.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\5.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\6.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\7.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\8.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL-115.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL-115.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL107 update.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL107 update.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL121.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL121.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL122.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL122.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL124.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL124.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL127.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL127.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\BL129-m.jpg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\BL129-m.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\Exist name.txt",
+      "PackagePath": "staticwebassets\\images\\originalimage\\Exist name.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\Mamoth.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\Mamoth.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.00 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.00 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.00.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.00.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.01.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.02.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.03 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.03 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.03.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.03.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05 (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05 (3).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.05.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06 (3).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.06.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07 (3).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.07.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (3).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (4).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08 (4).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.08.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (1).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (2).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09 (3).jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\WhatsApp Image 2024-03-12 at 22.41.09.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\fakma.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\fakma.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\fakma1.jpeg",
+      "PackagePath": "staticwebassets\\images\\originalimage\\fakma1.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\originalimage\\js.txt",
+      "PackagePath": "staticwebassets\\images\\originalimage\\js.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\03458b03-21b2-445c-9f3b-5f4e5f076f1a.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\03458b03-21b2-445c-9f3b-5f4e5f076f1a.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\07472de5-b3ae-44f7-9962-85c0dfb4f795.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\07472de5-b3ae-44f7-9962-85c0dfb4f795.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\0d58ee28-e29f-4d21-9043-2a37ab692087.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\0d58ee28-e29f-4d21-9043-2a37ab692087.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\0e6a7622-9f4a-450f-8584-e78e65f15fe3.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\0e6a7622-9f4a-450f-8584-e78e65f15fe3.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\0f222892-847b-4c51-ac15-08d6cf42be58.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\0f222892-847b-4c51-ac15-08d6cf42be58.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\13c5a87c-47cb-4e0e-b3aa-c7a1e56ac481.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\13c5a87c-47cb-4e0e-b3aa-c7a1e56ac481.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\18a23fd1-59e6-44a5-aa96-cfb15cf2e827.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\18a23fd1-59e6-44a5-aa96-cfb15cf2e827.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\2b77d14f-d7a5-4b23-a2da-637cc39f81aa.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\2b77d14f-d7a5-4b23-a2da-637cc39f81aa.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\2df7f87e-9a91-40fd-a1a0-684b5db6e9d4.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\2df7f87e-9a91-40fd-a1a0-684b5db6e9d4.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\2e0b2d2c-e623-4c97-8190-4ec7e972c061.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\2e0b2d2c-e623-4c97-8190-4ec7e972c061.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\305fcb83-abca-4025-aa6b-d5ebd9177598.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\305fcb83-abca-4025-aa6b-d5ebd9177598.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\35b1f099-71d9-43d4-bcbd-9f3f524046f7.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\35b1f099-71d9-43d4-bcbd-9f3f524046f7.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\3696a4ff-ce20-482b-a881-2c685c81e89c.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\3696a4ff-ce20-482b-a881-2c685c81e89c.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\3a360f99-2f69-4749-b2e9-737fa878434e.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\3a360f99-2f69-4749-b2e9-737fa878434e.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\49adf299-5f25-490b-b7f2-1d369a7e3963.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\49adf299-5f25-490b-b7f2-1d369a7e3963.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\49c6acdd-9ed6-4213-bd43-93e68041c15c.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\49c6acdd-9ed6-4213-bd43-93e68041c15c.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\4b776b94-702f-4685-bbc3-9cb945680e53.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\4b776b94-702f-4685-bbc3-9cb945680e53.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\54d3f386-2665-4ace-ac3e-ac8a3f05e43b.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\54d3f386-2665-4ace-ac3e-ac8a3f05e43b.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\5abd5679-9a00-40a6-8d58-ea80cce90674.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\5abd5679-9a00-40a6-8d58-ea80cce90674.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\5f8bea0f-ed49-4a27-90c4-b473748fbc7f.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\5f8bea0f-ed49-4a27-90c4-b473748fbc7f.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\82e54ac3-7118-4a3b-9c4c-c3c697455136.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\82e54ac3-7118-4a3b-9c4c-c3c697455136.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\85fa62b3-8cc0-484d-b9cc-85a1a94c6748.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\85fa62b3-8cc0-484d-b9cc-85a1a94c6748.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\94c72fa4-6436-4bf7-ab69-b7140af6fd7e.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\94c72fa4-6436-4bf7-ab69-b7140af6fd7e.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\966cfecc-6d9c-4dce-8f01-b1f467308ffd.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\966cfecc-6d9c-4dce-8f01-b1f467308ffd.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\9c294331-143d-424a-9fb5-e71760b81a9d.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\9c294331-143d-424a-9fb5-e71760b81a9d.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\a266d438-b6e9-412a-a400-fc3be58e55cb.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\a266d438-b6e9-412a-a400-fc3be58e55cb.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\a509d570-17fb-4b7a-8650-dfd17ec22789.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\a509d570-17fb-4b7a-8650-dfd17ec22789.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\abcde101-9f39-4b74-8259-b5c65ff5b10f.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\abcde101-9f39-4b74-8259-b5c65ff5b10f.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\b191d565-ff53-4689-8007-831f426d224f.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\b191d565-ff53-4689-8007-831f426d224f.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\b339dae8-810c-443e-851b-0d20be762b11.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\b339dae8-810c-443e-851b-0d20be762b11.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\ba1706cd-a9fe-43ec-affc-4b1af27bb483.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\ba1706cd-a9fe-43ec-affc-4b1af27bb483.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\babd1f52-d1fc-4918-8ede-e6acda883f9e.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\babd1f52-d1fc-4918-8ede-e6acda883f9e.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\bb354e22-399d-4f66-9d48-861d7abd64ce.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\bb354e22-399d-4f66-9d48-861d7abd64ce.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\c61e4564-7810-455b-bfe1-a6f377cf861d.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\c61e4564-7810-455b-bfe1-a6f377cf861d.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\c6203f21-ddff-43fc-a5b7-8b27824b98a8.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\c6203f21-ddff-43fc-a5b7-8b27824b98a8.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\ca6734f2-396f-4cca-a216-d66530a95d29.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\ca6734f2-396f-4cca-a216-d66530a95d29.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\ce1189d1-8a31-4144-9089-7342c9685eae.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\ce1189d1-8a31-4144-9089-7342c9685eae.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\d66f5955-d8c5-4815-abdf-12540c4da95d.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\d66f5955-d8c5-4815-abdf-12540c4da95d.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\d73d0eff-3088-421d-bb17-3796c5a315d2.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\d73d0eff-3088-421d-bb17-3796c5a315d2.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\df694b59-e143-4fb2-af40-8cb4cef70607.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\df694b59-e143-4fb2-af40-8cb4cef70607.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\edebb1cb-77f5-430d-a933-ecc72577bc84.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\edebb1cb-77f5-430d-a933-ecc72577bc84.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\f63666d0-b295-4109-b85a-cc62c62f3419.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\f63666d0-b295-4109-b85a-cc62c62f3419.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\f8b21f49-19bd-4061-86dd-03714d056685.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\f8b21f49-19bd-4061-86dd-03714d056685.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\f8c30c14-7a3c-48e9-b397-bb96c4ae0236.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\f8c30c14-7a3c-48e9-b397-bb96c4ae0236.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\fakma.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\fakma.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\fe446760-078a-4307-ac26-f68c03d5b129.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\fe446760-078a-4307-ac26-f68c03d5b129.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\handmadestore.png",
+      "PackagePath": "staticwebassets\\images\\productimages\\handmadestore.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\handmadestore1.png",
+      "PackagePath": "staticwebassets\\images\\productimages\\handmadestore1.png"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\newfakma.jpeg",
+      "PackagePath": "staticwebassets\\images\\productimages\\newfakma.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\noimage.jpg",
+      "PackagePath": "staticwebassets\\images\\productimages\\noimage.jpg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\productimages\\preloader.gif",
+      "PackagePath": "staticwebassets\\images\\productimages\\preloader.gif"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\images\\qais1.jpeg",
+      "PackagePath": "staticwebassets\\images\\qais1.jpeg"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\SignalrClients\\Message.js",
+      "PackagePath": "staticwebassets\\js\\SignalrClients\\Message.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\SignalrClients\\Reviews.js",
+      "PackagePath": "staticwebassets\\js\\SignalrClients\\Reviews.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\shop.js",
+      "PackagePath": "staticwebassets\\js\\shop.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\js\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert2.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\HandMadeStore\\HandMadeStore.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.HandMadeStore.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.HandMadeStore.UI.props",
+      "PackagePath": "build\\HandMadeStore.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.HandMadeStore.UI.props",
+      "PackagePath": "buildMultiTargeting\\HandMadeStore.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.HandMadeStore.UI.props",
+      "PackagePath": "buildTransitive\\HandMadeStore.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "t/Ew1FY1RyY=",
+  "success": true,
+  "projectFilePath": "D:\\HandMadeStore\\ReportsModels\\ReportsModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kais\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Kais\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

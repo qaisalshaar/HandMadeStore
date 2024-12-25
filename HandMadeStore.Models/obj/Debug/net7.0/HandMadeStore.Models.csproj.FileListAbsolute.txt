@@ -1,0 +1,34 @@
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.deps.json
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.runtimeconfig.json
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Utilities.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Utilities.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.csproj.AssemblyReference.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.AssemblyInfoInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.AssemblyInfo.cs
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.csproj.CoreCompileInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMade.A29956AF.Up2Date
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\refint\HandMadeStore.Models.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.genruntimeconfig.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\ref\HandMadeStore.Models.dll
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.deps.json
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.runtimeconfig.json
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.dll
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Models.pdb
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Utilities.dll
+D:\HandMadeStore\HandMadeStore.Models\bin\Debug\net7.0\HandMadeStore.Utilities.pdb
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.csproj.AssemblyReference.cache
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.AssemblyInfoInputs.cache
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.AssemblyInfo.cs
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMade.A29956AF.Up2Date
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.dll
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\refint\HandMadeStore.Models.dll
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.pdb
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\HandMadeStore.Models.genruntimeconfig.cache
+D:\HandMadeStore\HandMadeStore.Models\obj\Debug\net7.0\ref\HandMadeStore.Models.dll

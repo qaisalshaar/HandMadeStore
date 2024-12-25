@@ -1,0 +1,243 @@
+﻿@model OrderHeader
+@{
+    ViewData["Title"] = "Order List";
+}
+@{
+    var status = Context.Request.Query["status"];
+    var ppending = "";
+    var cancel = "";
+    // var ship = "";
+    var approved = "";
+    var inprocess = "";
+    var completed = "";
+    var all = "";
+
+    switch (status)
+    {
+        case "ppending":
+            ppending = "active";
+            break;
+        case "cancel":
+            cancel = "active";
+            break;
+        // case "ship":
+        //     ship = "active";
+        //     break;
+        case "approved":
+            approved = "active";
+            break;
+        case "inprocess":
+            inprocess = "active";
+            break;
+        case "completed":
+            completed = "active";
+            break;
+        default:
+            all = "active ";
+            break;
+    }
+}
+
+
+<div class="container-fluid p-1">
+
+    @* <div class="mb-2">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-primary">Order List</h2>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-controller="Order" asp-action="Upsert" class="btn btn-primary">
+                    <i class="bi bi-plus-square"></i> &nbsp; Create Order
+                </a>
+            </div>
+
+        </div>
+
+    </div> *@
+
+
+    <div class="p-1">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h2 class="text-primary">Orders List</h2>
+            </div>
+            <div>
+                <ul class="list-group list-group-horizontal-sm">
+                    <a  style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="ppending">
+                    <li class="list-group-item bg-gradient @ppending">Payment Pending</li>
+                    </a>
+
+                    <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="cancel">
+                    <li class="list-group-item bg-gradient @cancel">Status cancel</li>
+                    </a>
+
+                   @*  <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="ship">
+                    <li class="list-group-item bg-gradient @ship">Shiped</li>
+                    </a> *@
+
+
+                    <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="approved">
+                    <li class="list-group-item bg-gradient @approved">Approved</li>
+                    </a>
+                    <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="inprocess">
+                    <li class="list-group-item bg-gradient @inprocess">In Process</li>
+                    </a>
+                    <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="completed">
+                    <li class="list-group-item bg-gradient @completed">Shiped and Completed</li>
+                    </a>
+                    <a style="text-decoration:none; border-right: 6px solid white;
+  height: 50px;" asp-controller="Order"
+                       asp-action="Index" asp-route-status="all">
+                    <li class="list-group-item bg-gradient @all">All</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+</div>
+   
+    @* <div style="text-align: right ;" class="pb-2"> *@
+   @*  <div  class="text-sm-end pb-2">
+
+        <form method="post">
+            <div class="btn-group btn-group-toggle" style="width:50%">
+
+                <button type="button" asp-action="Index"  asp-route-status="pending" class="btn btn-primary" aria-pressed="@pending" autocomplete="off">
+                    pending
+                </button>
+
+                <button type="button" asp-action="Index"  asp-route-status="pending" class="btn btn-primary active"  aria-pressed="true" autocomplete="off">
+                    Approved
+                </button>
+
+
+
+                <button style="width:25%" asp-controller="Order"
+                        asp-action="Index" acti asp-route-status="pending" data-toggle="button" aria-pressed="false" autocomplete="off" class="@pending">
+                    pending
+                </button>
+                <button type="submit" style="width:25%" asp-controller="Order"
+                        asp-action="Index" asp-route-status="approved">
+                    Approved
+                </button>
+                <button style="width:25%" asp-controller="Order"
+                        asp-action="Index" asp-route-status="inProcess">
+                    In Process
+                </button>
+                <button style="width:25%" asp-controller="Order"
+                        asp-action="Index" asp-route-status="completed">
+                    Completed
+                </button>
+                <button style="width:25%" asp-controller="Order"
+                        asp-action="Index" asp-route-status="All">
+                    All
+                </button>
+            </div>
+        </form>
+      
+</div> *@
+  
+
+    <div class="border border-2 border-primary rounded mb-3 p-5">
+
+        <table id="orderTable" class="text-center pt-2 w-100">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+
+                    <th class="text-center">
+                        Buyer name
+                    </th>
+
+                    <th class="text-center">
+                        Phone Number
+                    </th>
+                    <th class="text-center">
+                        Email
+                    </th>
+
+                    <th class="text-center">
+                        orderStatus
+                    </th>
+                    <th class="text-center">
+                        orderTotal
+                    </th>
+                    <th class="text-center" width="10%">
+                        action
+                    </th> 
+                </tr>
+            </thead>
+            <tbody>
+
+            
+              
+            </tbody>
+
+
+
+        </table>
+    </div>
+</div>
+
+
+
+<style>
+    .list-group-item.active, .list-group-item.active:hover {
+        color: black;
+        background: #efa31d;
+        border-color: #efa31d
+    }
+</style>
+
+@* 
+<style>
+    .btn-group button {
+        background-color: black; /* Green background */
+        border: 1px solid #efa31d; /* Green border */
+        color: white; /* White text */
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+        background-color: #efa31d;
+        
+    }
+</style> *@
+@section Scripts{
+  
+    <script src="~/js/order.js"></script>
+
+  }
+
+
+
+
+

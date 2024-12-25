@@ -1,0 +1,10 @@
+D:\HandMadeStore\ReportsModels\bin\Release\netstandard2.0\ReportsModels.deps.json
+D:\HandMadeStore\ReportsModels\bin\Release\netstandard2.0\ReportsModels.dll
+D:\HandMadeStore\ReportsModels\bin\Release\netstandard2.0\ReportsModels.pdb
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.csproj.AssemblyReference.cache
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.AssemblyInfoInputs.cache
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.AssemblyInfo.cs
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.dll
+D:\HandMadeStore\ReportsModels\obj\Release\netstandard2.0\ReportsModels.pdb

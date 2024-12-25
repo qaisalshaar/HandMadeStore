@@ -1,0 +1,28 @@
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Categories.rdlc
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.deps.json
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\ReportsModels.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\ReportsModels.pdb
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.csproj.AssemblyReference.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.AssemblyInfoInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.AssemblyInfo.cs
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.csproj.CoreCompileInputs.cache
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalsh.C93F71C5.Up2Date
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.dll
+D:\ASP Kais\Hand made backup\26-2-2024 SignalR\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.pdb
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Categories.rdlc
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.deps.json
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.dll
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.pdb
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\ReportsModels.dll
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\bin\Debug\netstandard2.0\ReportsModels.pdb
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.csproj.AssemblyReference.cache
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.GeneratedMSBuildEditorConfig.editorconfig
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.AssemblyInfoInputs.cache
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.AssemblyInfo.cs
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.csproj.CoreCompileInputs.cache
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalsh.C93F71C5.Up2Date
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.dll
+D:\HandMadeStore\Kaisalshaarhandmadestore.Report\obj\Debug\netstandard2.0\Kaisalshaarhandmadestore.Report.pdb

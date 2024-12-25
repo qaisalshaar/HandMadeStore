@@ -1,0 +1,68 @@
+﻿@model Product
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center p-3">Kais Alshaar Handmade Store</h1>
+    <h1 class="text-center p-3">Product Details Report</h1>
+    <h2 class="pl-2">Report Date : @(DateTime.Now.ToShortDateString()) @(DateTime.Now.ToShortTimeString())</h2>
+    <table class="table table-borderless">
+        <tr>
+            <td class="px-3" width="75%">
+                <h1 class="pt-2">Product Information</h1>
+                <h2>Name : @Model.Name</h2>
+                <h2> Seller : @Model.Brand.Name</h2>
+                <h2> Created Date : @Model.CreatedDate</h2>
+                <h2> No Of Reviews : @TempData["Revcount"]</h2>
+                <h2> Description : @Html.Raw(Model.Description)</h2>
+                <h1>Product Prices</h1>
+                <table style="font-size:20px;" class="text-center w-100 table table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="text-start">
+                                Quantity
+                            </th>
+                            <th class="text-center">
+                                &nbsp;&nbsp; 1-10
+                            </th>
+                            <th class="text-center">
+                                &nbsp;&nbsp; 11-30
+                            </th>
+                            <th class="text-center ">
+                                &nbsp;&nbsp; 30+
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-start">
+                                Price
+                            </th>
+                            <th class="text-center">
+                                &nbsp;&nbsp; @Model.Price
+                            </th>
+                            <th class="text-center">
+                                &nbsp;&nbsp; @Model.Price10plus
+                            </th>
+                            <th class="text-center ">
+                                &nbsp;&nbsp; @Model.Price30plus
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </td>
+            <td width="30%">
+                <img src="@Model.ImageUrl" />
+            </td>
+        </tr>
+    </table>
+    <h1 class="text-end me-5">Signature</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+

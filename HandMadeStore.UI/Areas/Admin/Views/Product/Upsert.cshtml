@@ -1,0 +1,428 @@
+﻿@model ProductVM
+    @using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+@{
+    ViewData["Title"] = (Model.Product.Id == 0 ? @locolaizer["Create Product"] : @locolaizer["Update Product"]);
+    var IsArabic = CultureInfo.CurrentCulture.Name.StartsWith("ar");
+    <head>
+        <script src="https://cdn.tiny.cloud/1/zq79jez46kgr9x6tlx8dgcg6fp6kxskiwsadld8kx9j0szpp/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    </head>
+
+
+}
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <div class="row">
+
+        <input asp-for="Product.Id" hidden />
+        <input asp-for="Product.ImageUrl" hidden />
+        <h2 class="text-primary">
+            @(Model.Product.Id == 0 ? @locolaizer["Create Product"] : @locolaizer["Update Product"]) 
+        </h2>
+        <hr />
+
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+        <div class="col-10">
+            <div class="mb-3">
+                <label asp-for="Product.Name"></label>
+                <input asp-for="Product.Name" class="form-control" id="productnameval" asp-data="UPD" onblur="ProductCheck()" />
+                <span asp-validation-for="Product.Name" class="text-danger" id="producterror"></span>
+            </div>
+
+           @*  <div class="mb-3">
+                <label asp-for="Product.ArabicName"></label>
+                <input asp-for="Product.ArabicName" class="form-control" id="productnameval" onblur="ProductCheck()" />
+                <span asp-validation-for="Product.ArabicName" class="text-danger" id="producterror"></span>
+            </div> *@
+
+
+            <div class="mb-3">
+                <label asp-for="Product.Description"></label>
+
+                <textarea asp-for="Product.Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Product.Description" class="text-danger"></span>
+            </div>
+
+           @*  <div class="mb-3">
+                <label asp-for="Product.ArabicDescription"></label>
+
+                <textarea asp-for="Product.ArabicDescription" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Product.ArabicDescription" class="text-danger"></span>
+            </div> *@
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="mb-3 col-sm-4">
+            <label asp-for="Product.Price">@locolaizer["Product Price"]</label>
+            <input asp-for="Product.Price" class="form-control" />
+            <span asp-validation-for="Product.Price" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 col-sm-4">
+            <label asp-for="Product.Price10plus">@locolaizer["Product Price10plus"]</label>
+            <input asp-for="Product.Price10plus" class="form-control" />
+            <span asp-validation-for="Product.Price10plus" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-sm-4">
+            <label asp-for="Product.Price30plus">@locolaizer["Product Price30plus"]</label>
+            <input asp-for="Product.Price30plus" class="form-control" />
+            <span asp-validation-for="Product.Price30plus" class="text-danger"></span>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="mb-3 col-sm-6">
+            <label asp-for="Product.ImageUrl">@locolaizer["Image"]</label>
+          
+            @if (!IsArabic)
+            {
+                <input id="imagpath" name="imagurl" onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])" accept="image/*" asp-for="Product.ImageUrl" class="form-control" type="file" />
+            }
+            @if (IsArabic)
+            {
+                <input id="imagpath1" name="imagurl" onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])" accept="image/*" asp-for="Product.ImageUrl" class="form-control" type="file" />
+            }
+
+
+            @*  class="form-input is-invalid" aria-describedby="imagpathFeedback" required *@
+
+            @* <span> @Html.ValidationMessageFor(x => x.Product.ImageUrl, "", new { @class = "text-danger" ,@id="imgerror"})</span> *@
+       @*      <span asp-validation-for="Product.ImageUrl" class="text-danger"></span> *@
+
+            <span class="text-danger" id="imgerror"></span>
+            @*  <span asp-validation-for="Product.ImageUrl" class="text-danger"></span> *@
+
+            @*  @Html.ValidationMessageFor(m => m.Product.ImageUrl,"",new {@class="text-danger"}) *@
+        </div>
+        <div class="mb-3 col-sm-2">
+            @*  <img src="~/images/productimages/@Model.Product.ImageUrl" class="img-thumbnail" /> *@
+            @if (Model.Product.Id != 0)
+            {
+                <img src="@Model.Product.ImageUrl" class="img-thumbnail" id="preview" alt="No Image" height="10%" />
+            }
+            else
+            {
+                <img src="~/images/productimages/noimage.jpg" id="preview" class="img-thumbnail" height="10%"/>
+            }
+
+        </div>
+        <div class="mb-5 col-sm-6">
+            <label asp-for="Product.CategoryId">@locolaizer["Category Name"]</label>
+            @*  <select asp-for="CategoryId" asp-items="ViewBag.Categorylist" class="form-select">
+            <option disabled selected>---Select Category---</option>
+
+            </select>  *@
+
+            <select asp-for="Product.CategoryId" asp-items="@Model.Categorylist" class="form-select">
+                <option disabled selected>---@locolaizer["Select Category"]---</option>
+
+            </select>
+            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+        </div>
+
+
+        <div class="mb-3 col-sm-6">
+            <label asp-for="Product.BrandId">@locolaizer["Brand Name"]</label>
+            @*  <select asp-for="Product.BrandId" asp-items="@ViewData["Brandlist"] as IEnumerable<SelectListItem>" class="form-select">
+            <option disabled selected>---Select Brand---</option>
+
+            </select> *@
+
+            <select asp-for="Product.BrandId" asp-items="@Model.Brandlist" class="form-select">
+                <option disabled selected>---@locolaizer["Select Brand"]---</option>
+
+            </select>
+            <span asp-validation-for="Product.BrandId" class="text-danger"></span>
+        </div>
+
+
+
+    </div>
+    <div class="d-flex justify-content-between mt-3">
+        @if (Model.Product.Id != 0)
+        {
+
+            <button type="submit" id="submit-btn" class="btn btn-primary w-50 me-1">  <i class="bi bi-pencil-square"></i> &nbsp; @locolaizer["Update Product"]</button>
+
+        }
+        else
+        {
+            @*  onblur = "validateInput();" *@
+            @if (!IsArabic)
+            {
+                <button type="submit" onclick="validateInput();" id="submit-btn" class="btn btn-primary w-50 me-1">  <i class="bi bi-plus-square"></i> &nbsp; @locolaizer["Create Product"]</button>
+                
+            }
+
+            @if (IsArabic)
+            {
+                <button type="submit" onclick="validateInput1();" id="submit-btn" class="btn btn-primary w-50 me-1">  <i class="bi bi-plus-square"></i> &nbsp; @locolaizer["Create Product"]</button>
+
+            }
+        }
+
+        <a asp-action="Index" class="btn btn-secondary w-50">
+            <i class="bi bi-arrow-left-square"></i> &nbsp; @locolaizer["Back to List"]
+        </a>
+    </div>
+
+
+
+
+</form>
+
+
+@section Scripts{
+
+  
+
+   
+    <partial name="_ValidationScriptsPartial" />
+
+
+
+
+
+  
+
+@* preview image on select image in input  *@
+@* <script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        alert('oj');
+        reader.onload = function () {
+            var output = document.getElementById('preview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+</script> *@
+
+@* 
+<script>
+    $(document).on('click', '#InputImageURL', function () {
+        if ($("#imgurlupload").val() == "") {
+
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Please Upload Image File"
+
+                    });
+                }
+    })
+</script> *@ 
+   
+<script>
+
+    const validateInput = () => {
+
+
+        if ($("#imagpath").val() == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please upload an image!'
+            });
+
+
+
+            $("#imgerror").html("Please upload an image");
+            // $("#imagpath").focus();
+            // $('#submit-btn').attr("disabled", true);
+            return false;
+
+
+
+
+        } else {
+            // $('#submit-btn').removeAttr("disabled");
+            $("#imgerror").html('');
+            return true;
+        }
+
+    }
+
+
+
+
+</script>
+
+
+
+
+
+
+    <script>
+
+        const validateInput1 = () => {
+
+
+            if ($("#imagpath1").val() == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'يرجى تحميل صورة!'
+                });
+
+
+
+                $("#imgerror").html("يرجى تحميل صورة");
+                // $("#imagpath").focus();
+                // $('#submit-btn').attr("disabled", true);
+                return false;
+
+
+
+
+            } else {
+                // $('#submit-btn').removeAttr("disabled");
+                $("#imgerror").html('');
+                return true;
+            }
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+<script>
+    // // tinymce.init({
+    // //         selector: 'textarea',
+    // //         file_picker_types: 'file image media'
+    // //     plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    // //         toolbar: 'link image | paste | undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    // //     height: 200,
+    // //     paste_as_text: true,
+    // //         paste_merge_formats: true,
+    // //         a11y_advanced_options: true,
+         
+    // // });
+
+
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'image code anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'link image | paste | undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+            /* enable title field in the Image dialog*/
+            image_title: true,
+            /* enable automatic uploads of images represented by blob or data URIs*/
+            automatic_uploads: true,
+            /*
+              URL of our upload handler (for more details check: https://www.tiny.cloud/docs/configure/file-image-upload/#images_upload_url)
+              images_upload_url: 'postAcceptor.php',
+              here we add custom filepicker only to Image dialog
+            */
+            file_picker_types: 'image',
+            /* and here's our custom image picker*/
+            file_picker_callback: (cb, value, meta) => {
+                const input = document.createElement('input');
+                input.setAttribute('type', 'file');
+                input.setAttribute('accept', 'image/*');
+
+                input.addEventListener('change', (e) => {
+                    const file = e.target.files[0];
+
+                    const reader = new FileReader();
+                    reader.addEventListener('load', () => {
+                        /*
+                          Note: Now we need to register the blob in TinyMCEs image blob
+                          registry. In the next release this part hopefully won't be
+                          necessary, as we are looking to handle it internally.
+                        */
+                        const id = 'blobid' + (new Date()).getTime();
+                        const blobCache = tinymce.activeEditor.editorUpload.blobCache;
+                        const base64 = reader.result.split(',')[1];
+                        const blobInfo = blobCache.create(id, file, base64);
+                        blobCache.add(blobInfo);
+
+                        /* call the callback and populate the Title field with the file name */
+                        cb(blobInfo.blobUri(), { title: file.name });
+                    });
+                    reader.readAsDataURL(file);
+                });
+
+                input.click();
+            },
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
+        });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function ProductCheck() {
+
+
+
+
+            $.post("@Url.Action("ProductNameCkeck", "Product")",
+            {
+                proname: $("#productnameval").val()
+            },
+            function (data) {
+                if (data == 0) {
+                    // $("#producterror").html('<font color="Green">Available !. you can take it.</font>');
+                    // $("#productnameval").css("border-color", "Green");
+                    // $('#productnameval').attr("disabled", false);
+
+
+                    $('#submit-btn').removeAttr("disabled");
+
+                    return true;
+
+                }
+                else {
+
+
+                    $("#producterror").html('That product name is taken.Try Another One');
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Duplicate Product Name',
+                        text: 'Please That product name is taken.Try Another One'
+                    });
+
+                    $('#submit-btn').attr("disabled", true);
+                    return false;
+
+                    // $("#productnameval").css("border-color", "Red");
+                }
+            });
+    }
+
+
+</script>
+
+
+
+
+}
+
+
+

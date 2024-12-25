@@ -1,0 +1,374 @@
+﻿@using HandMadeStore.Utilities;
+@model OrderVM
+
+@{
+    ViewData["Title"] = "Order Details";
+    var @test = Model.OrderHeader.SessionId;
+}
+<form method="post">
+    @*  for post method *@
+    <input asp-for="OrderHeader.Id" hidden />
+    @*  <input  value="OrderHeader.SessionId" hidden /> *@
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header bg-primary text-light">
+                <div class="row">
+                    <div class="col-10 py-1">
+                        <i class="bi bi-list-ul"></i>
+                        <strong>Order Details</strong>
+                    </div>
+                    <div class="text-end col-2">
+                        <a asp-action="Index" class="btn btn-outline-light form-control btn-sm">Back to Orders</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 pb-4">
+                            <div class="row">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary">Order Details:</span>
+                                </h4>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Name</div>
+                                <div class="col-8 ">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input asp-for="OrderHeader.Name" type="text" class="form-control border-1 border-black" />
+                                        <span asp-validation-for="OrderHeader.Name"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.Name" readonly type="text" class="form-control" />
+                                    }
+
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Email</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input asp-for="OrderHeader.ApplicationUser.Email" type="text" class="form-control" />
+                                        <span asp-validation-for="OrderHeader.ApplicationUser.Email"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.ApplicationUser.Email" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Phone</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input asp-for="OrderHeader.PhoneNumber" type="text" class="form-control" />
+                                        <span asp-validation-for="OrderHeader.PhoneNumber"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.PhoneNumber" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Address</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input asp-for="OrderHeader.StreetAddress" type="text" class="form-control" />
+                                        <span asp-validation-for="OrderHeader.StreetAddress"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.StreetAddress" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">City</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input asp-for="OrderHeader.City" type="text" class="form-control" />
+                                        <span asp-validation-for="OrderHeader.City"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.City" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Order Date</div>
+                                <div class="col-8">
+                                    @* asp-for="@Model.OrderHeader.OrderDate.ToString("dd/MM/yyyy")" *@
+                                    <input value="@Model.OrderHeader.OrderDate?.ToString("dd/MM/yyyy")" type="text" class="form-control" readonly />
+
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Carrier</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input id="carrier" asp-for="OrderHeader.Carrier" type="text" class="form-control" />
+                                        <span class="text-danger" id="carriererror"></span>
+
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.Carrier" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Tracking</div>
+                                <div class="col-8">
+                                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                                    {
+                                        <input id="trackingNumber" asp-for="OrderHeader.TrackingNumber" type="text" class="form-control" />
+                                        <span class="text-danger" id="trackingNumbererror"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="OrderHeader.TrackingNumber" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Shipping Date</div>
+                                <div class="col-8">
+                                    <input value="@Model.OrderHeader.ShippingDate?.ToString("dd/MM/yyyy")" type="text" readonly class="form-control" />
+                                </div>
+                            </div>
+
+
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                            {
+                                <div class="row my-1">
+                                    <div class="col-4">Session ID</div>
+                                    <div class="col-8">
+                                        <input asp-for="OrderHeader.SessionId" type="text" readonly class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-4">Payment Intent ID</div>
+                                    <div class="col-8">
+                                        <input asp-for="OrderHeader.PaymentIntentId" type="text" readonly class="form-control" />
+                                    </div>
+                                </div>
+
+                            }
+
+
+                            <div class="row my-1">
+                                @*  التاكد انه تم السداد من قيمة Sessionid *@
+                                @if (@test == null)
+                                {
+                                    @*   لم يتم السداد
+                                عرض تاريخ الواجب السداد *@
+                                    <div class="col-4">Payment Due Date</div>
+                                    <div class="col-8">
+                                        <input value="@Model.OrderHeader.PaymentDueDate?.ToString("dd/MM/yyyy")" readonly class="form-control" />
+                                    </div>
+                                }
+                                else
+
+                                {
+                                    @*   عرض تاريخ السداد *@
+                                    <div class="col-4">Payment Date</div>
+                                    <div class="col-8">
+                                        <input value="@Model.OrderHeader.PaymentDate" readonly class="form-control" />
+                                    </div>
+                                }
+
+
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-4">Payment Status</div>
+                                <div class="col-8">
+                                    <input asp-for="@Model.OrderHeader.PaymentStatus" type="text" readonly class="form-control" />
+                                </div>
+                            </div>
+
+                            @*   تظهر فقط للمدير والمشرف *@
+
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                            {
+                                <input type="submit" asp-area="Admin" asp-action="UpdateOrderDetails" asp-controller="Order" class="btn btn-primary form-control my-1" value="Update Order Details" />
+
+                            }
+                        </div>
+                        <div class="col-12 col-lg-5 offset-lg-1">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Order Summary</span>
+                            </h4>
+                            <label class="border-primary text-primary text-center form-control my-2 display-2">Order Status - @Model.OrderHeader.OrderStatus</label>
+
+                            <ul class="list-group mb-2">
+                                @foreach (var item in Model.OrderDetails)
+                                {
+                                    <li class="list-group-item">
+                                        <div class="row container-fluid">
+                                            <div class="col-8 text-white">
+                                                <h6>@item.Product.Name</h6>
+                                                <h6>Price : @item.Price</h6>
+                                                <h6>Quantity : @item.Count</h6>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <h6 class="text-warning my-4 "> @(item.Count * item.Price)</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+
+
+                                <li class="list-group-item bg-info">
+                                    <div class="row container-fluid">
+                                        <div class="col-8">
+                                            <h5 class="text-white">TOTAL </h5>
+                                        </div>
+                                        <div class="col-4 text-end px-0">
+                                            <h5 class="text-white">@Model.OrderHeader.OrderTotal ($)</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            @*     التاكد من ان اليورز هل shop *@
+                            @*  بشرطين
+                            ان الدفعة مؤجلة-
+                            والطلبية في الشحن- *@
+                            @if (Model.OrderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment
+
+
+                            && Model.OrderHeader.OrderStatus == SD.StatusShipped)
+                            {
+                                // حيث سيقوم المدير او المشرف بدفع المبلغ بالنيابة عن المحل
+                                <input type="submit" asp-action="PayNow" class="btn btn-success form-control my-1" value="Pay Now" />
+
+                            }
+
+
+                            @*  التاكد من ان المدير او المشرف داخل *@
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Moderator))
+                            {
+                                @if (Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                                {
+                                    // معالجة الطلب وتجهيزه لعملية الشحن
+                                    <input type="submit" asp-action="StartProcessing" class="btn btn-warning form-control my-1" value="Start Processing" />
+                                }
+
+                                @if (Model.OrderHeader.OrderStatus == SD.StatusInProcess)
+                                {
+                                    <input type="submit" id="ShipOrderbtn" asp-action="ShipOrder" onmouseover="ValidateInput1()" class="btn btn-primary form-control my-1" value="Ship Order" />
+
+                                }
+
+                                @*   ثلاث شروط لاظهار الزرCancel *@
+                                @*    لم يتم ارجاع قيمة الارودر- *@
+                                @*    لم يتم الغاء الطلب قبل ذلك - *@
+                                @*      لم يتم شحن الطلب - *@
+                                @if (Model.OrderHeader.PaymentStatus != SD.StatusRefunded&&
+                                    Model.OrderHeader.OrderStatus != SD.StatusCancelled&&
+                                     Model.OrderHeader.OrderStatus != SD.StatusShipped)
+                                {
+
+
+                                    <input type="submit" asp-action="CancelOrder" class="btn btn-danger form-control my-1" value="Cancel Order" />
+
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+ 
+
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.tiny.cloud/1/zq79jez46kgr9x6tlx8dgcg6fp6kxskiwsadld8kx9j0szpp/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        const ValidateInput1 = () => {
+            if ($("#carrier").val() == "") {
+                $("#carriererror").html('Please enter carrier!'),
+                    $('#carrier').focus();
+                    $('#ShipOrderbtn').attr("disabled", true),
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please enter carrier!',
+                });
+                return false;
+            }
+            if ($("#trackingNumber").val() == "") {
+                $("#trackingNumbererror").html('Please enter tracking Number!'),
+                    $('#trackingNumber').focus();
+                    $('#ShipOrderbtn').attr("disabled", true),
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please enter tracking number!',
+                });
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+
+   @*  <script>
+
+        $(function () {
+
+            $("#carrier").lostfocus(function (event) {
+
+                if ($("#carrier").val() != "") {
+
+                    $("#carriererror").html(''),
+                        $('#ShipOrderbtn').attr("disabled", false);
+
+                }
+
+            };
+        };
+      
+        
+
+    </script> *@
+        
+
+    <script>
+        $(document).ready(function () {
+           
+            $("#carrier").focusout(function () {
+                if ($("#carrier").val() != "")
+                    $("#carriererror").html('');
+                $('#ShipOrderbtn').attr("disabled", false);
+            });
+
+
+            $("#trackingNumber").focusout(function () {
+                if ($("#trackingNumber").val() != "")
+                    $("#trackingNumbererror").html('');
+                $('#ShipOrderbtn').attr("disabled", false);
+            });
+
+
+
+        });
+
+
+
+    </script>
+}		

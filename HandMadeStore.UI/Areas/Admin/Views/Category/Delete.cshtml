@@ -1,0 +1,37 @@
+﻿@model Category
+
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+
+@{
+    ViewData["Title"] = @locolaizer["Delete Category"];
+}
+
+<form method="post" asp-action="Delete">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">@locolaizer["Delete Category"]</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Name">
+                @locolaizer["Category Name"]</label>
+            <input asp-for="Name" class="form-control" disabled />
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="ArabicName"> @locolaizer["Category Arabic Name"]</label>
+            <input asp-for="ArabicName" class="form-control" disabled />
+         
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary w-50 me-1"><i class="bi bi-x-square"></i> &nbsp; @locolaizer["Delete Category"]</button>
+            <a asp-action="Index" class="btn btn-secondary w-50">
+               <i class="bi bi-arrow-left-square"></i>  &nbsp; @locolaizer["Back to List"]
+            </a>
+        </div>
+    </div>
+</form>
+

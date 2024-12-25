@@ -1,0 +1,161 @@
+﻿@model Shop
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+@{
+    ViewData["Title"] = (Model.Id == 0 ? @locolaizer["Create Shop"] : @locolaizer["Update Shop"]);
+
+
+
+
+}
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <div class="row">
+
+        <input asp-for="Id" hidden />
+
+
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+        <div class="col-10">
+            <div class="mb-3">
+                <label asp-for="Name"> @locolaizer["Shop Name"]</label>
+                <input asp-for="Name" class="form-control" id="shopnameval" onblur="ShopCheck()" />
+                <span asp-validation-for="Name" class="text-danger" id="shoperror"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="City">@locolaizer["City"]</label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="StreetAddress">   @locolaizer["Street Address"]</label>
+                <input asp-for="StreetAddress" class="form-control" />
+                <span asp-validation-for="StreetAddress" class="text-danger"></span>
+
+            </div>  <div class="mb-3">
+                <label asp-for="PostalCode">  @locolaizer["Postal Code"]</label>
+                <input asp-for="PostalCode" class="form-control" />
+                <span asp-validation-for="PostalCode" class="text-danger"></span>
+
+            </div> <div class="mb-3">
+                <label asp-for="PhoneNumber">@locolaizer["Phone Number"]</label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+        @if (Model.Id != 0)
+        {
+
+            <button type="submit" id="submit-btn" class="btn btn-primary w-50 me-1">  <i class="bi bi-pencil-square"></i> &nbsp;  @locolaizer["Update Shop"]</button>
+
+        }
+        else
+        {
+            @*  onblur = "validateInput();" *@
+
+            <button type="submit" id="submit-btn" class="btn btn-primary w-50 me-1">  <i class="bi bi-plus-square"></i> &nbsp;  @locolaizer["Create Shop"]</button>
+
+        }
+
+        <a asp-action="Index" class="btn btn-secondary w-50">
+            <i class="bi bi-arrow-left-square"></i> &nbsp;  @locolaizer["Back to List"]
+        </a>
+    </div>
+
+
+
+
+</form>
+
+
+@section Scripts{
+
+
+    <partial name="_ValidationScriptsPartial" />
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function ShopCheck() {
+
+
+
+
+        $.post("@Url.Action("ShopNameCkeck", "Shop")",
+            {
+                proname: $("#shopnameval").val()
+            },
+            function (data) {
+                if (data == 0) {
+                    // $("#shoperror").html('<font color="Green">Available !. you can take it.</font>');
+                    // $("#shopnameval").css("border-color", "Green");
+                    // $('#shopnameval').attr("disabled", false);
+
+
+                    $('#submit-btn').removeAttr("disabled");
+
+                    return true;
+
+                }
+                else {
+
+
+                    $("#shoperror").html('That shop name is taken.Try Another One');
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Duplicate Shop Name',
+                        text: 'Please That shop name is taken.Try Another One'
+                    });
+
+                    $('#submit-btn').attr("disabled", true);
+                    return false;
+
+                    // $("#shopnameval").css("border-color", "Red");
+                }
+            });
+    }
+
+
+</script>
+
+
+
+
+
+
+
+

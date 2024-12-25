@@ -1,0 +1,157 @@
+
+<script>
+    function ProductCheck() {
+        $("#producterror").html("Checking...");
+        $.post("@Url.Action("ProductNameCkeck", "Product")",
+            {
+                proname: $("#productnameval").val()
+            },
+            function (data) {
+                if (data == 0) {
+                    // $("#producterror").html('<font color="Green">Available !. you can take it.</font>');
+                    // $("#productnameval").css("border-color", "Green");
+
+                }
+                else {
+                    $("#producterror").html('That product name is taken.Try Another One');
+                    // $("#productnameval").css("border-color", "Red");
+                }
+            });
+    }
+</script>
+
+
+
+     <div class="mb-3">
+         <label asp-for="Product.Name"></label>
+         <input asp-for="Product.Name" class="form-control" id="productnameval" onchange="ProductCheck()" />
+         <span asp-validation-for="Product.Name" class="text-danger" id="producterror"></span>
+     </div>
+
+
+
+
+  public JsonResult ProductNameCkeck(ProductVM productVM, string proname)
+
+  {
+
+
+      System.Threading.Thread.Sleep(200);
+      var checkproductname = _unitOf.Product.GetFirstOrDefault(x => x.Name == proname);
+
+      //var checkproductname = _unitOf.Product.GetFirstOrDefault(p => p.Name == proname).Name;
+      if (checkproductname != null)
+      {
+          return Json(1);
+
+
+      }
+      else
+      {
+          return Json(0);
+
+      }
+
+  }
+
+
+
+
+
+@* 
+ <script type="text/javascript" >
+ *@
+//         $(function () {
+
+//             $("#productnameval").change(ProductCheck);
+
+//         });
+
+
+
+//     function ProductCheck() {
+
+//         $.ajax({
+
+//             type: "POST",
+
+//             url: "Product/ProductNameCkeck",
+
+//             data: { proname: $('#productnameval').val() },
+
+//             success: function (response) {
+
+//                 $("#productnameval").empty();
+
+//                 if (response.d != "0") {
+
+//                     $("#producterror").html(' That user name has already been taken');
+
+//                 }
+
+//             }
+
+//         });
+
+//     }
+
+
+
+// </script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function ProductCheck() {
+
+        $("#producterror").html("Checking...");
+
+
+        $.post("@Url.Action("ProductNameCkeck", "Product")",
+            {
+                proname: $("#productnameval").val()
+            },
+            function (data) {
+                if (data == 0) {
+                    // $("#producterror").html('<font color="Green">Available !. you can take it.</font>');
+                    // $("#productnameval").css("border-color", "Green");
+                    return true;
+                }
+                else {
+                    $("#producterror").html('That product name is taken.Try Another One');
+
+                    Swal.fire({
+                        icon: 'Duplicate Product',
+                        title: 'Oops...',
+                        text: 'Please That product name is taken.Try Another One'
+                    });
+
+
+                    // $("#productnameval").css("border-color", "Red");
+                }
+            });
+    }
+
+    
+</script>
+
+
+
+

@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Category>
+
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+
+@{ 
+    
+    var IsArabic = CultureInfo.CurrentCulture.Name.StartsWith("ar");
+    ViewData["Title"] = @locolaizer["Category List"];
+}
+
+
+
+
+<div class="container p-1">
+    <div class="row pt-1">
+        <div class="col-6">
+            <h2 class="text-primary"> @locolaizer["Category List"]</h2>
+        </div>
+        <div class="col-6 text-end">
+            @if (IsArabic)
+            {
+                <div style="margin-right:241px">
+                <a  asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-square"></i> &nbsp;  @locolaizer["Create Category"]
+                </a>
+
+                <a  asp-controller="Category" asp-action="PrintCategory" class="btn btn-info">
+                    <i class="bi bi-printer"></i> &nbsp;  @locolaizer["Print Categories"]
+                </a>
+                </div>
+            }
+            @if (!IsArabic)
+            {
+                <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-square"></i> &nbsp;  @locolaizer["Create Category"]
+                </a>
+                <a asp-controller="Category" asp-action="PrintCategory" class="btn btn-info">
+                    <i class="bi bi-printer"></i> &nbsp;  @locolaizer["Print Categories"]
+                </a>
+            }
+        </div>
+
+        <table class="table table-bordered table-striped mt-1 w-100">
+            <thead>
+                <tr>
+
+
+                   @*  <th>
+                        @(!IsArabic ? locolaizer["Category Name"] : locolaizer["Category Arabic Name"])
+                    </th>
+ *@
+
+
+                    <th>
+                       @locolaizer["Category Name"] 
+                    </th>
+                    <th>
+                        @locolaizer["Category Arabic Name"]
+                    </th>
+
+                    <th class="text-center">
+                        @locolaizer["Created Date"]
+                    </th>
+                    <th class="text-center" width="20%">
+                        @locolaizer["Action"]
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.ToList().Count != 0)
+                {
+                    @foreach (var cate in Model)
+                    {
+
+
+                        <tr>
+                            <td>
+                                @cate.Name
+                               @*  @(!IsArabic ? cate.Name : cate.ArabicName) *@
+                            </td>
+                            <td>
+                                 @cate.ArabicName
+                             @*    @(!IsArabic ? cate.Name : cate.ArabicName) *@
+                            </td>
+                            <td class="text-center">
+                                @cate.CreatedDate
+                            </td>
+                            <td class="text-center" width="20%">
+                                <div class="d-flex justify-content-between">
+
+                                    <a class="btn btn-warning" asp-action="Update"
+                                       asp-route-id="@cate.Id">  <i class="bi bi-pencil-square"></i> &nbsp;  @locolaizer["Update"]</a>
+                                    <a class="btn btn-danger " asp-action="Delete"
+                                       asp-route-id="@cate.Id"><i class="bi bi-x-square"></i> &nbsp; @locolaizer["Delete"]</a>
+                                </div>
+
+
+
+
+                            </td>
+
+                        </tr>
+                    }
+                }
+                else
+                {
+
+                    <tr>
+                        <td colspan="3" class="text-center">
+                            @locolaizer["There Is No Data"]
+                        </td>
+
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

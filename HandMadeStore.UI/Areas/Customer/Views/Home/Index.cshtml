@@ -1,0 +1,329 @@
+﻿@model IEnumerable<Product>
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using Microsoft.AspNetCore.Localization;
+@using System.Globalization;
+@inject IViewLocalizer locolaizer;
+
+@{
+    ViewData["Title"] = @locolaizer["Home Catalog"];
+    var IsArabic = CultureInfo.CurrentCulture.Name.StartsWith("ar");
+}
+@{
+ var requestCullcure1=Context.Features.Get<IRequestCultureFeature>();
+
+}
+<style>
+
+
+    /* Bootstrap 4 text input with search icon */
+
+    .has-search .form-control {
+        padding-left: 2.375rem;
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+</style>
+
+@if (Model.ToList().Count == 0)
+{
+   
+  @*   <div class="container-fluid text-center w-25 py-3">
+        <form class="d-flex" asp-action="index" data-id="proname" method="get">
+            <input name="proname" class="form-control me-2" type="search" placeholder="Search" id="txtSearch" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div> *@
+
+
+    @* <partial name="_Search" /> *@
+    <div class="text-center" style="border:2px solid #593196; border-radius: 5px;">
+        <span class="container-fluid py-3">  <img src="~/images/NoDataFound.jpg" height="20%" width="30%" /> </span>
+
+    </div>
+
+
+
+
+}
+else
+{
+   @*  <div class="text-center">
+        <h1 class="display-4">@ViewBag.welcomemessage </h1>
+
+    </div>
+ *@
+    
+
+    <div id="productlist">
+      
+
+   @*  search buttom *@
+       @*  <div class="container-fluid text-center w-25 py-3">
+            <form class="d-flex" asp-action="index" data-id="proname" method="get">
+                <input name="proname" class="form-control me-2" type="search" placeholder="Search" id="txtSearch" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div> *@
+      @*   <partial name="_Search" /> *@
+
+
+
+
+
+        <div class="row" style="margin-top:-7px;">
+            @foreach (var product in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom:auto">
+                    <div class="row p-1">
+
+                        <div class="col-12 p-1" style="border:2px solid #593196; border-radius: 5px;">
+                            <div class="card border-0 ">
+                                <img loading="lazy" src="@product.ImageUrl" class="card-img-top" />
+                                <div class="card-body text-center">
+                                    <div class="pl-1">
+                                        <p class="card-title h5 text-dark"> @(!IsArabic ? product.Category.Name : product.Category.ArabicName)</p>
+
+                                        @if (!IsArabic)
+                                        {
+                                            <p class="card-title h5 text-primary">@(product.Name.Count() > 25 ?product.Name.Substring(0, 25): product.Name)</p>
+
+                                        }
+                                        @if (IsArabic)
+                                        {
+                                            <p class="card-title h5 text-primary">@(product.ArabicName.Count() > 25 ? product.ArabicName.Substring(0, 25) : product.ArabicName)</p>
+
+                                        }
+                                       
+                                    </div>
+                                    <div class="pl-1">
+                                        <h5 class="card-title text-mute">@(locolaizer["Price"]): <b>@(product.Price) $</b></h5>
+                                    </div>
+                                    @* <div class="pl-1">
+                                        <h5>@locolaizer["Culture"] </h5>
+                                        <h5>@requestCullcure1.RequestCulture.Culture.NativeName </h5>
+                                    </div>
+                                    <div class="pl-1">
+                                        <h5>@locolaizer["UICulture"] </h5>
+                                        <h5>@requestCullcure1.RequestCulture.UICulture.NativeName </h5>
+                                    </div>
+                                    <div class="pl-1">
+                                        <h5>@locolaizer["date"] </h5>
+                                        <h5>@DateTime.Now.ToLongDateString()</h5>
+                                    </div>
+                                     <div class="pl-1">
+                                        <h5>@locolaizer["currency"] </h5>
+                                        <h5>@(9985.00.ToString("c")) </h5>
+                                    </div>
+                                    <div class="pl-1">
+                                        <h5>@locolaizer["numbers"] </h5>
+                                        <h5>@(987.87.ToString("F2")) </h5>
+                                    </div> *@
+                                </div>
+                            </div>
+                            <div>
+                                <a asp-action="Details" class="btn btn-primary form-control" asp-route-proid="@product.Id">
+                                    @locolaizer["Details"]
+                                   
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+
+
+
+}
+
+
+@*   <p class="card-title h5 text-primary"> ${item.name}.Count() > 25 ? ${item.name.Substring(0, 25)} : ${item.name}) < /p> *@
+
+
+@section Scripts{
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("#txtSearch20").keypress(function (e) {
+               alert('ok');
+                if (e.which == 13) {
+                    LoadData();
+                }
+
+              
+            });
+        });
+
+        function LoadData() {
+            var proname = $("#txtSearch2000").val();
+            // var url1 = '/Home/SearchbyProductname/';
+
+           alert(proname);
+            $.ajax({
+                // url: "/Home/SearchbyProductname" + proname,
+                url: '@Url.Action("SearchbyProductname", "Home")',
+                //  url: url1,
+                // dataType: "json",
+                type: "get",
+                Cache: false,
+                //   contentType: 'application/json; charset=utf-8',
+
+                // data: '{proname: ' + JSON.stringify(proname) + '}',
+                //  data: '{item: ' + JSON.stringify(proname) + '}',
+                         // < button class= "btn btn-outline-success" type = "submit" > Search < /button>
+                data: { "proname20": $("#txtSearch20").val() },
+                success: function (resp) {
+
+                    var tbodydata = "";
+                    var tbodydatasercrch = `
+                             <div class="container-fluid text-center w-25 py-3">
+                    <form class="d-flex" asp-action="index" method="get">
+                        <input name="proname1" class="form-control me-2" type="search" placeholder="Search" id="txtSearch" aria-label="Search">
+                     </form>
+                </div>
+                    `;
+                    var input2 = `
+
+                              <input name="proname20" class="form-control me-2" type="search" placeholder="Search" id="txtSearch20" aria-label="Search">
+                    `;
+                    var JJJ = JSON.stringify(resp).length;
+
+                    if (JJJ === 20) {
+                        $("#productlist").html('');
+                        $("#productlist").html(
+                            `
+                             ${tbodydatasercrch}
+                <div class="text-center" style="border:2px solid #593196; border-radius: 5px;">
+                    <span class="container-fluid py-3">  <img src="/images/NoDataFound.jpg" height="20%" width="30%" /> </span>
+
+                </div>
+
+                                                   ` );
+                        console.log(resp.length);
+                        console.log(resp);
+                        console.log(JJJ);
+
+
+                    } else {
+
+                        // $("#productlist").html('There is data');
+                        //  resultObj = eval(resp);
+                        //    var HTMLbuilder = "";
+                        //var json = $.parseJSON(data);
+                        // var result = $.parseJSON(resp);
+                        //     ${ value.id }
+                        var result = eval(resp);
+                        var finalname = "";
+                        var finalname1 = "";
+                        // var tt = eval(result);
+                        $("#productlist").html('');
+                        $.each(resp, function (key, value) {
+
+                            finalname = value.name;
+                            finalname1 = finalname.substring(0, 7);
+                            if (finalname.length > 25) {
+
+                                finalname = (finalname.substring(0, 25))
+                                     
+                                    } else {
+
+                                finalname == finalname
+                                //  console.log(finalname);
+                            }
+                          
+
+                          
+                           
+                            // tbodydata = tbodydata + "<div>" + value.id + "  </div>";
+                            tbodydata = tbodydata + `
+
+                                    
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom:auto">
+                            <div class="row p-1">
+
+                                <div class="col-12 p-1" style="border:2px solid #593196; border-radius: 5px;">
+                                    <div class="card border-0 ">
+                                                <img loading="lazy" src="${value.imageUrl1}" class="card-img-top" />
+                                        <div class="card-body text-center">
+                                            <div class="pl-1">
+                                                                <p class="card-title h5 text-dark">${value.category.name}</p>
+                                                                                                <p class="card-title h5 text-primary">
+
+                                                                                                         ${finalname}
+                                                                                                </p>
+                                            </div>
+                                            <div class="pl-1">
+                                                        <h5 class="card-title text-mute">Price: <b>${value.price} $</b></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                                <a asp-action="Details" class="btn btn-primary form-control" asp-route-proid="${value.productid}">
+                                            Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                
+
+                                                                          ` ;
+
+                               
+                         //   $('#productlist').html(tbodydata);
+
+
+                            // $('#productlist').html('<div class="text-center">' + i + '</>');
+                            // $('#productlist').html('kais');
+                        });
+
+                        $('#productlist').html(`
+                                         
+                                             ${input2}
+                                                    
+                                <div class="row" style="margin-top:-7px;">
+                        ${tbodydata}
+                        
+                        
+                        
+                        ' </div>`);
+
+                      
+                        console.log(result);
+                        console.log(resp);
+                        console.log(JJJ);
+                    }
+
+                },
+                error: function (err) {
+                    $("#productlist").html('Error');
+                    console.log(err);
+                }
+            });
+        }
+
+
+
+
+    </script>
+
+   }

@@ -1,0 +1,123 @@
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer locolaizer;
+
+@{
+    
+    var IsArabic = CultureInfo.CurrentCulture.Name.StartsWith("ar");
+    
+}
+
+
+@{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
+}
+
+@if (TempData["success"] != null && !IsArabic)
+    {
+        <script type="text/javascript">
+
+        toastr.success('@TempData["success"]', 'Kais alshaar HanedMade Store',
+                {
+                "positionClass": "toast-top-center",
+
+                    "closeButton": true,
+                    "progressBar": true,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "3000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut",
+              
+                    
+                }
+        ).css({ "width": "25em", "max-width": "25em" })
+
+        </script>
+    }
+
+@if (TempData["success"] != null && IsArabic)
+{
+    <script type="text/javascript">
+
+        toastr.success('@TempData["success"]', 'متجر قيس الشعار للمصنوعات اليدوية ',
+            {
+                "positionClass": "toast-top-center",
+
+                "closeButton": true,
+                "progressBar": true,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "3000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut",
+              
+            }
+        ).css({ "width": "25em", "max-width": "25em" })
+
+    </script>
+}
+
+
+
+@if (TempData["error"] != null && !IsArabic)
+{
+    <script type="text/javascript">
+   toastr.error('@TempData["error"]','Kais alshaar HanedMade Store',
+       {
+                "positionClass": "toast-top-center",
+
+                "closeButton": true,
+                "progressBar": true,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "3000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut",
+             
+
+                      }
+        ).css({ "width": "25em", "max-width": "25em" })
+
+    </script>
+}
+
+
+@if (TempData["error"] != null && IsArabic)
+{
+    <script type="text/javascript">
+        toastr.error('@TempData["error"]', 'متجر قيس الشعار للمصنوعات اليدوية',
+            {
+                "positionClass": "toast-top-center",
+
+                "closeButton": true,
+                "progressBar": true,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "3000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut",
+              
+
+                              }
+        ).css({ "width": "25em", "max-width": "25em" })
+
+    </script>
+}
+
+
+
